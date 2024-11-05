@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <title>Drivers by Department</title>
+    <link href="/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <br></br>
+        <h1>Drivers by Department</h1>
+        <a type="button" class="btn btn-primary" href="/33906548/Patrick/">Home</a>
+        <a type="button" class="btn btn-primary" href="/33906548/Patrick/add-driver">Add New Driver</a>
+        
+        <% for (let department in driversByDepartment) { %>
+            <h3 class="mt-4"><%= department %></h3>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Driver ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Licence</th>
+                        <th scope="col">Active</th>
+                        <th scope="col">Created At</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% driversByDepartment[department].forEach(driver => { %>
+                        <tr>
+                            <td scope="row"><%= driver.driver_id %></td>
+                            <td><%= driver.driver_name %></td>
+                            <td><%= driver.driver_licence %></td>
+                            <td><%= driver.driver_isActive ? 'Yes' : 'No' %></td>
+                            <td><%= driver.driver_createdAt.toLocaleString() %></td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        <% } %>
+    </div>
+</body>
+
+</html>

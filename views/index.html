@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to FIT2095 Package Delivery System</title>
+    <link href="/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-image: url('/Warehouse.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="padding-left: 50px; padding-top: 20px">
+        <img src="/logo.png" class="img-fluid" style="width: 150px; height: auto;" alt="image">
+    </div>
+
+    <div class="album py-5">
+        <div class="container">
+            <br><br>
+            <h3 class="my-2" style="color:white;">
+                Welcome to the Package Delivery System (:
+            </h3>
+            <br></br>
+            <!-- Labels for the number of drivers and packages -->
+            <h5 style="color:white;">Number of Drivers: <span id="driver-count"><%= driverCount %></span></h5>
+            <h5 style="color:white;">Number of Packages: <span id="package-count"><%= packageCount %></span></h5>
+            <br><br>
+        </div>
+    </div>
+
+    <div style="padding-left: 50px;">
+        <a class="btn btn-success" href="/33906548/Patrick/add-driver">Add Drivers</a>
+    </div>
+    <div style="padding-left: 50px; padding-top: 30px">
+        <a class="btn btn-success" href="/33906548/Patrick/view-drivers">View Drivers</a>
+    </div>
+    <div style="padding-left: 50px; padding-top: 30px">
+        <a class="btn btn-success" href="/33906548/Patrick/delete-driver">Delete Drivers</a>
+    </div>
+    <div style="padding-left: 50px; padding-top: 30px">
+        <a class="btn btn-success" href="/33906548/Patrick/add-package">Add Package</a>
+    </div>
+    <div style="padding-left: 50px; padding-top: 30px">
+        <a class="btn btn-success" href="/33906548/Patrick/view-packages">View Packages</a>
+    </div>
+    <div style="padding-left: 50px; padding-top: 30px;" >
+        <a class="btn btn-success" href="/33906548/Patrick/delete-package">Delete Package</a>
+    </div>
+    <div style="padding-left: 50px; padding-top: 30px; padding-bottom: 50px" >
+        <a class="btn btn-success" href="/33906548/Patrick/list-drivers-by-department">list drivers by department</a>
+    </div>
+
+    <footer class="bg-dark text-light text-left py-3 px-3">
+        <p class="mb-1">
+            <strong class="text-primary">Name:</strong> Patrick Fennessy<br>
+            <strong class="text-primary">Student ID:</strong> 33906548 <br>
+            <br><br>
+            <strong class="text-primary">About Us:</strong> Our Package Delivery Management Application (PDMA) is a comprehensive web-based solution designed to streamline and optimize the entire package delivery process. From order creation and tracking to driver management and route optimisation, our PDMA empowers businesses to deliver packages efficiently and reliably. With our user-friendly interface and powerful features, you can enhance customer satisfaction, reduce costs, and improve overall operational efficiency<br>
+            <br><br>
+            <strong class="text-primary">Contact Us:</strong><br>
+            <ul>
+                <li>Email: <a href="" class="text-primary">pfen0005@student.monash.edu</a></li>
+                <li>Phone: <a href="" class="text-primary">+ 61 3 9905 4000</a></li>
+                <li>Address: <a href="" class="text-primary">Wellington Road
+                    Clayton
+                    Victoria 3800
+                    Australia</a></li>
+            </ul>
+        </p>
+    </footer>
+</body>
+</html>
